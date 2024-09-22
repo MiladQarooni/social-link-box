@@ -1,0 +1,176 @@
+
+.container {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.main-box-social {
+    width: 40%; 
+    margin: 30px auto;
+    background-color: #464343;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.main-box-social .photo-box {
+    width: 30%; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: aqua;
+    position: relative;
+    display: block;
+
+}
+
+.main-box-social .photo-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+#title{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+#description{
+    width: 100%;
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.social-buttons{
+    
+    width: 70%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Facebook*/
+.notification {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 10px 26px;
+    position: relative;
+    display: block; /* تغییر display به block برای اعمال width: 100% */
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;}
+
+    /*Instagram*/
+
+    .instagram {
+        border-radius: 2px;
+        background-color: #555;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px 26px;
+        width: 100%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+
+        
+      }
+      
+      .instagram span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .instagram span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .instagram:hover span {
+        padding-right: 25px;
+      }
+      
+      .instagram:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      /*Twitter*/
+
+      .twitter {
+        border-radius: 2px;
+        background-color: #555;
+        border: none;
+        color: white;
+        padding: 10px 26px;
+        text-align: center;
+        opacity: 1;
+        transition: 0.3s;
+        width: 100%;
+        margin-bottom: 10px;
+        text-decoration: none;
+
+      }
+
+      @media only screen and (max-width: 1200px) {
+
+
+      
+      
+      }
+      
+      @media only screen and (max-width: 992px) {
+      
+        .main-box-social {
+          width: 60%; 
+        
+      }
+       
+      
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .main-box-social {
+          width: 80%; 
+        
+      }
+ 
+      }
+      
+      @media only screen and (max-width: 576px) {
+      
+        .main-box-social {
+          width: 90%; 
+        
+      }
+       
+      }
